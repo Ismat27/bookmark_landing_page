@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [View solution here](https://github.com/Ismat27/bookmark_landing_page)
+- [Preview site here](https://ismat27.github.io/bookmark_landing_page/)
 
 ## My process
 

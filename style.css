@@ -1,0 +1,151 @@
+:root {
+    --soft-red-color: hsl(0, 94%, 66%);
+    --soft-blue-color: hsl(231, 69%, 60%);
+    --grayish-blue-color: hsl(229, 8%, 60%);
+    --dark-blue-color: hsl(229, 31%, 21%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .8s;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-blue-color);
+}
+p {
+    color: var(--grayish-blue-color);
+}
+.btn {
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+header {
+    padding: 35px 25px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: var(--dark-blue-color);
+}
+.hamburger {
+    cursor: pointer;
+}
+.open {
+    display: inline-block;
+}
+.closed {
+    display: none;
+}
+.nav-item {
+    padding: 20px 0;
+    border-top: .1px solid var(--grayish-blue-color);
+}
+.nav-link {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.login > .nav-link {
+    border: 2px solid #fff;
+    width: 100%;
+    display: inline-block;
+}
+@media (max-width: 991px) {
+    .menu-opened {
+        background-color: var(--dark-blue-color);
+        opacity: .9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        height: 100vh;
+    }
+    .menu-opened .top {
+        margin-bottom: 40px;
+    }
+    .menu-opened .logo {
+        color: #fff;
+    }
+    .nav {
+        text-align: center;
+        display: none;
+    }
+    .menu-opened .nav {
+        display: block;
+    }
+}
+@media (min-width: 576px) {
+    
+}
+@media (min-width: 768px) {
+    p {
+        font-size: 18px;
+    }
+}
+@media (min-width: 992px) {
+    header {
+        padding: 35px 0;
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        color: var(--dark-blue-color);
+    }
+    .hamburger {
+        display: none;
+    }
+    .nav-items {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .nav-item {
+        border: none;
+        padding: 0;
+    }
+    .nav-link {
+        color: #000;
+    }
+    .nav-link:hover{
+        color: var(--soft-red-color);
+    }
+    .login > .nav-link {
+        background-color: var(--soft-red-color);
+        color: #fff;
+        padding: 8px 25px;
+        border: 2px solid var(--soft-red-color);
+    }
+    .login > .nav-link:hover {
+        background-color: #fff;
+        color: var(--soft-red-color);
+    }
+}

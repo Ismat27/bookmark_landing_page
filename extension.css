@@ -1,0 +1,230 @@
+.extension {
+    margin-bottom: 50px;
+}
+.extension-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.extension-card {
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(170, 167, 167, 0.2);
+    border-radius: 5px;
+    padding-block: 40px 20px;
+    width: 300px;
+}
+.extension-card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.extension-card p {
+    margin-block: 16px 32px;
+}
+.extension-card img {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.faq {
+    margin-bottom: 100px;
+}
+.questions {
+    padding: 0 25px;
+    max-width: 535px;
+    margin: auto;
+}
+.questions button {
+    display: block;
+    margin: 40px auto 0 auto;
+}
+.question {
+    border-bottom: 2px solid var(--grayish-blue-color);
+    padding-block: 20px;
+}
+.faq-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-flex:hover .faq-question {
+    color: var(--soft-red-color);
+}
+.question-toggle {
+    cursor: pointer;
+}
+.faq-question {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+.faq-answer {
+    height: 0;
+    overflow: hidden;
+    line-height: 30px;
+}
+.question-opened .faq-answer {
+    height: auto;
+    margin-block: 20px;
+}
+.question-opened .question-toggle {
+    transform: rotate(180deg);
+}
+.footer-top {
+    padding-block: 80px;
+    background-color: var(--soft-blue-color);
+}
+.footer-header {
+    padding: 0 15px;
+}
+.footer-header .member-fig {
+    margin-block: 0 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.footer-header > * {
+    color: #ffffff;
+}
+form {
+    max-width: 535px;
+    margin: 20px auto 0 auto;
+}
+.form-screen {
+    width: 100%;
+    margin-bottom: 20px;
+}
+form.error .form-screen {
+    background-color: var(--soft-red-color);
+    border-radius: 5px;
+    padding: 2px;
+}
+.input {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input, input:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+
+}
+.error-icon {
+    display: none;
+}
+form.error .error-icon {
+    display: inline;
+}
+form .error-msg {
+    display: none;
+    color: #ffffff;
+    font-style: italic;
+    text-align: left;
+    padding-left: 15px;
+    margin-block: 0 !important;
+}
+form.error .error-msg {
+    display: block;
+}
+form .btn {
+    color: #ffffff;
+    background-color: var(--soft-red-color);
+    padding: 15px 10px;
+    width: 100%;
+}
+form .btn:hover {
+    background-color: #ffffff;
+    color: var(--soft-red-color);
+    padding: 13px 10px;
+    border: 2px solid var(--soft-red-color);
+}
+.footer-bottom {
+    padding-block: 60px;
+    background-color: var(--dark-blue-color);
+}
+.flh {
+    color: #ffffff;
+    text-align: center;
+}
+.footer-nav .nav-items {
+    text-align: center;
+    margin-block: 35px 40px;
+}
+.footer-nav .nav-item {
+    border: none;
+}
+.footer-link {
+    color: #ffffff;
+}
+.footer-link:hover {
+    color: var(--soft-red-color);
+}
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+.footer-socials img:hover {
+    background-color: var(--soft-red-color);
+}
+@media (min-width: 576px) {
+    .questions {
+        padding: 0;
+    }
+    .question:first-child {
+        border-top: 2px solid var(--grayish-blue-color);
+    }
+    .footer-header h2 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-block: 40px;
+    }
+    footer form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    form .btn {
+        width: 200px;
+    }
+    .form-screen {
+        margin: 0;
+    }
+}
+@media (min-width: 992px) {
+    .extension-cards {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .extension-card:nth-child(2) {
+        margin-top: 40px;
+    }
+    .extension-card:nth-child(3) {
+        margin-top: 80px;
+    }
+    .footer-bottom {
+        padding-block: 20px;
+    }
+    .footer-nav .nav-items {
+        margin: 0;
+    }
+    .footer-flex {
+        display: flex;
+        align-items: center;
+    }
+    .ff1 {
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .ff2 {
+        gap: 80px;
+    }
+}
